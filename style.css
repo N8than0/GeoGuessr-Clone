@@ -1,0 +1,106 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#pano {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 4rem;
+  width: 33%;
+  height: 45%;
+  z-index: 10;
+}
+
+#gamebar {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  z-index: 11;
+  background-color:rgba(0, 0, 0, 0.897);
+
+}
+
+#mainHeader {
+  display: flex;
+  position:absolute;
+  font-size: 4rem;
+  color: white;
+  left: 2%;
+  top: 0.3rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#guessBtn {
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  border-style: hidden;
+  background-color: rgb(104, 122, 145);
+  line-height: 2rem;
+  display: flex;
+  text-decoration: solid;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  border-style: ridge;
+  border-radius: 10%;
+  color: white;
+  font-size:medium;
+  scale: 1.25;
+}
+
+#guessPopup {
+  position: absolute;
+  width: 30rem;
+  height: 20rem;
+  background-color: rgba(27, 27, 27, 0.795);
+  left: 35%;
+  top: 30%;
+  border-radius: 2%;
+  z-index: 14;
+}
+
+#distance {
+  font-size: x-large;
+  position: inherit;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  top: 50%;
+  left: 12%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#popupButton {
+  position: inherit;
+  top: 12%;
+  left:40%;
+  border-style: hidden;
+  background-color: rgb(104, 122, 145);
+  line-height: 2rem;
+  display: flex;
+  text-decoration: solid;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  border-style: ridge;
+  border-radius: 10%;
+  color: white;
+  font-size:medium;
+}
+
+#guessBtn:hover, #popupButton:hover {
+  background-color: rgb(54, 62, 73);
+}
+
